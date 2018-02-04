@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Sorting Tool for Salmon Run Weapons.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>サーモンラン支給ブキソート</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="no">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="./bundle.js"></script>
+</head>
+
+<body>
+    <table align="center" id="mainTable">
+        <tbody>
+            <tr>
+            <td id="battleNumber" style="padding-bottom: 10px;" colspan="3">?</td>
+            </tr>
+            <tr>
+            <td id="leftField" onclick="if(finishFlag==0)sortList(-1);" rowspan="2">?</td>
+            <td class="middleField" onclick="if(finishFlag==0)sortList(0);">引き分け</td>
+            <td id="rightField" onclick="if(finishFlag==0)sortList(1);" rowspan="2">?</td>
+            </tr>
+            <tr>
+            <td class="middleField" onclick="if(finishFlag==0)sortList(0);">どちらも知らない</td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="resultField" style="text-align: center;">
+        <p>
+            <span>サーモンランの支給ブキを好きな順にソートします。</span><br />
+            <span>好きな方（または引き分け）をクリックで選択してください。<br /><br />公式および関連会社様とは一切関係はございません。
+            </p>
+    </div>
+</body>
+
+</html>
